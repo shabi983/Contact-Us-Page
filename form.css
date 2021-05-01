@@ -82,7 +82,7 @@ body{
 }
 #cfgen-form-1 .cfgen-loading{
 	display:none;
-	background:url('../img/loading.gif') no-repeat 0 1px;
+	background:url('https://github.com/shabi983/Contact-Us-Page/blob/main/loading.gif?raw=true') no-repeat 0 1px;
 	width:16px;
 	height:16px;
 }
