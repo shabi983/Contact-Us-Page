@@ -1,5 +1,5 @@
 <?php
-/*~ class.pop3.php
+/*~ https://github.com/shabi983/Contact-Us-Page/blob/main/class.pop3.php
 .---------------------------------------------------------------------------.
 |  Software: PHPMailer - PHP email class                                    |
 |   Version: 5.2.2                                                          |
