@@ -89,7 +89,7 @@ class contactForm{
 		}
 
 		
-		require 'class.phpmailer.php';
+		require 'https://github.com/shabi983/Contact-Us-Page/blob/main/class.phpmailer.php';
 		
 		$this->phpmailer_adminnotification = $this->phpMailerSetUp(new PHPMailer());
 		$this->phpmailer_adminnotification->AddAddress($this->cfg['email_address']);
@@ -371,7 +371,7 @@ class contactForm{
 				{
 
 					// delete attached file?
-					// this is different from deleting the file when the user deletes the file himself in the from: check form-validation.php for this (in form-validation.php because the file must be deleted even if sendMail() is not called - when there are errors for example)
+					// this is different from deleting the file when the user deletes the file himself in the from: check https://github.com/shabi983/Contact-Us-Page/blob/main/form-validation.php for this (in form-validation.php because the file must be deleted even if sendMail() is not called - when there are errors for example)
 					if(isset($value['deletefile']) && $value['deletefile'] == 2){
 						
 						if(isset($value['element_value']) && $value['element_value']){
