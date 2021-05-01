@@ -1,9 +1,9 @@
 <?php
-require 'sessionpath.php';
+require 'https://github.com/shabi983/Contact-Us-Page/blob/main/sessionpath.php';
 
-require '../inc/form-config.php';
+require 'https://github.com/shabi983/Contact-Us-Page/blob/main/form-config.php';
 
-require '../class/class.form.php';
+require 'https://github.com/shabi983/Contact-Us-Page/blob/main/class.form.php';
 
 $contactform_obj = new contactForm($cfg);
 
@@ -27,7 +27,7 @@ if($_SESSION['captcha_img_string']['32a614f62de907137f2cdba18d4eaf9d9112c740'] !
 
 /**
  * some basic security checks to prevent direct access
- * form-validation-constantcontact.php must also be updated
+ * https://github.com/shabi983/Contact-Us-Page/blob/main/form-validation-constantcontact.php must also be updated
  */
 
 if(
@@ -38,7 +38,7 @@ if(
 	exit;
 }
 
-include('../class/class.cfgenwp.api.php');
+include('https://github.com/shabi983/Contact-Us-Page/blob/main/class.cfgenwp.api.php');
 $cfgenwpapi_obj = new cfgenwpApi();
 
 // default json_response, no input field values ($contactform_obj->merge_post is empty)
@@ -495,9 +495,9 @@ if($json_error_array){
 		// ADMIN SMS NOTIFICATION CLICKATELL
 		if(!empty($cfg['sms_admin_notification_gateway_id']) && !empty($cfg['sms_admin_notification_to_phone_number'])){
 		
-			require '../class/class.curl.php';
+			require 'https://github.com/shabi983/Contact-Us-Page/blob/main/class.curl.php';
 			
-			require '../class/class.notification.sms.php';
+			require 'https://github.com/shabi983/Contact-Us-Page/blob/main/class.notification.sms.php';
 			
 			if($cfg['sms_admin_notification_gateway_id'] === 'clickatell'){
 
@@ -856,7 +856,7 @@ if($json_error_array){
 			$service_requirements_status = $cfgenwpapi_obj->checkServiceRequirements($service_id);
 		
 			if($service_requirements_status['status']){
-				include('form-validation-constantcontact.php');
+				include('https://github.com/shabi983/Contact-Us-Page/blob/main/form-validation-constantcontact.php');
 			} else{
 				$admin_api_error['constantcontact']['error_message'] = implode("\r\n", $service_requirements_status['errors']);
 			} // if/else service status
