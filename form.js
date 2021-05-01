@@ -24,7 +24,7 @@ jQuery(function(){
 	
 	form.on('click', 'img.cfgen-captcha-refresh', function(){
 		
-		form.find('img.cfgen-captcha-img').prop('src','cfgen-form-1/inc/captcha.php?r='+Math.random());
+		form.find('img.cfgen-captcha-img').prop('src','https://github.com/shabi983/Contact-Us-Page/blob/main/captcha.php?r='+Math.random());
 		
 	});
 	
@@ -217,7 +217,7 @@ jQuery(function(){
 					'deleteuploadedfile':deleteuploadedfile_value
 					};
 
-		jQuery.post('cfgen-form-1/inc/form-validation.php',
+		jQuery.post('https://github.com/shabi983/Contact-Us-Page/blob/main/form-validation.php',
 					post,
 					function(data){
 
