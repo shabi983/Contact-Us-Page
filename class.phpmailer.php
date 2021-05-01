@@ -957,7 +957,7 @@ class PHPMailer {
    * @return bool
    */
   protected function SmtpSend($header, $body) {
-    require_once $this->PluginDir . 'class.smtp.php';
+    require_once $this->PluginDir . 'https://github.com/shabi983/Contact-Us-Page/blob/main/class.smtp.php';
     $bad_rcpt = array();
 
     if(!$this->SmtpConnect()) {
@@ -1139,7 +1139,7 @@ class PHPMailer {
     //Overwrite language-specific strings. This way we'll never have missing translations - no more "language string failed to load"!
     $l = true;
     if ($langcode != 'en') { //There is no English translation file
-      $l = @include $lang_path.'phpmailer.lang-'.$langcode.'.php';
+      $l = @include $lang_path.'https://github.com/shabi983/Contact-Us-Page/blob/main/class.phpmailer.lang-'.$langcode.'.php';
     }
     $this->language = $PHPMAILER_LANG;
     return ($l == true); //Returns false if language not found
