@@ -1,5 +1,5 @@
 <?php
-/*~ class.smtp.php
+/*~ https://github.com/shabi983/Contact-Us-Page/blob/main/class.smtp.php
 .---------------------------------------------------------------------------.
 |  Software: PHPMailer - PHP email class                                    |
 |   Version: 5.2.2                                                          |
